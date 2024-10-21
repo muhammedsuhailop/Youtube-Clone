@@ -79,11 +79,7 @@ body,*{
     padding-left: 20px;
     position: relative;
 }
-@media screen and (max-width: 600px){
-    .search-box{
-        width:536px;
-    }
-}
+
 .search-box-icon{
     width:64px;
     height: 36px;
@@ -369,4 +365,16 @@ hr{
 }
 .channel-name-div:hover .channel-tooltip{
     visibility: visible;
+}
+
+@media (max-width: 600px){
+    .search-box{
+        width:536px;
+    }
+    .side-bar{
+        display: none;
+    }
+    .video-box{
+        width: 100%;
+    }
 }
