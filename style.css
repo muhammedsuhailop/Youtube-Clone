@@ -322,7 +322,7 @@ hr {
     align-items: center;
     overflow: auto;
     white-space: nowrap;
-    position: sticky;
+    position: fixed;
     background-color: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(30px);
     z-index: 2;
