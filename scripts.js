@@ -44,3 +44,27 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const ytoptions = document.getElementById('yt-ops-div').innerHTML;
+    const cards = document.querySelectorAll('.video-grid');
+
+    cards.forEach(card => {
+        const opscontainer = document.createElement('div');
+        opscontainer.className = ('dropdown');
+
+        const opstoggle = document.createElement('i');
+        opstoggle.className = ('bi bi-three-dots-vertical');
+        opstoggle.setAttribute('data-bs-toggle', 'dropdown');
+
+        opscontainer.appendChild(opstoggle);
+        opscontainer.innerHTML += ytoptions;
+
+        card.querySelector('.card-body').appendChild(opscontainer);
+    })
+})
+
+document.addEventListener('DOMContentLoaded', function () {
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+});
+

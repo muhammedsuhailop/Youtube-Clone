@@ -163,6 +163,11 @@ a {
     display: none;
 }
 
+.ops-icon {
+    font-size: 20px;
+    margin: 0 15px 0 2px;
+}
+
 
 /* temp style */
 .videos-section {
@@ -191,7 +196,6 @@ a {
     grid-area: content;
     ;
 }
-
 
 /* Media queries */
 
