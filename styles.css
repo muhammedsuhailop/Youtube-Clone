@@ -197,6 +197,15 @@ a {
     ;
 }
 
+.header-top {
+    overflow: visible;
+}
+
+#yt-create-div {
+    position: fixed;
+    z-index: 90000;
+}
+
 /* Media queries */
 
 @media only screen and (max-width: 768px) {
@@ -236,7 +245,9 @@ a {
 }
 
 @media only screen and (max-width: 449px) {
-    #sm-n {
+
+    #sm-n-n,
+    #sm-c-n {
         display: none;
     }
 }

@@ -52,11 +52,18 @@
                     </a>
                 </div>
                 <div class="col-md-auto px-2">
-                    <a class="yt-top-btn rounded-circle p-2 mx-2" href="#" id="sm-n" data-bs-toggle="tooltip"
+                    <a class="yt-top-btn rounded-circle p-2 mx-2 " href="#" id="sm-c-n" data-bs-toggle="tooltip"
                         data-bs-placement="bottom" data-bs-title="Create">
                         <i class="bi bi-camera-video yt-icons"></i>
                     </a>
-                    <a class="yt-top-btn rounded-circle p-2 mx-2" href="#" id="sm-n" data-bs-toggle="tooltip"
+                    <div id="yt-create-div" style="display: none;">
+                        <div class=" dropdown-menu-end rounded-4 border border-light shadow p-3 mb-5 bg-white rounded">
+                            <a class="dropdown-item" href="#"><i class="bi bi-file-play me-2"></i>Upload video</a>
+                            <a class="dropdown-item" href="#"><i class="bi bi-broadcast me-2"></i>Go Live</a>
+                            <a class="dropdown-item" href="#"><i class="bi bi-pencil-square me-2"></i>Create Post</a>
+                        </div>
+                    </div>
+                    <a class="yt-top-btn rounded-circle p-2 mx-2" href="#" id="sm-n-n" data-bs-toggle="tooltip"
                         data-bs-placement="bottom" data-bs-title="Notifications">
                         <i class="bi bi-bell yt-icons"></i>
                     </a>
@@ -587,7 +594,7 @@
             </div>
         </div>
     </div>
-    
+
     <script src="./scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

@@ -68,3 +68,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 });
 
+const createButton = document.getElementById("sm-c-n");
+const createList = document.getElementById("yt-create-div");
+
+createButton.addEventListener('click', () => {
+    createList.style.display = createList.style.display === 'none' ? 'block' : 'none';
+})
+
